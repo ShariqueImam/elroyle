@@ -5,7 +5,7 @@ const style = {
   wrapper: 'my-12 flex flex-col mx-auto',
   smallHeading: ' w-[95%] md:w-[60%] mx-auto my-4 text-3xl sm:text-3xl md:text-4xl lg:text-4xl text-[#EBB43D] text-center',
   heading: ' w-[95%] md:w-[60%] lg:w-[40%] mx-auto my-4 text-4xl sm:text-4xl md:text-5xl lg:text-5xl text-gray-900 opacity-[0.95] text-center',
-  cardContainer:'flex items-center gap-12 flex-col md:flex-row justify-center w-[90%] md:w-[95%] lg:w-[60%] mx-auto',
+  cardContainer:'flex items-center gap-12 flex-col md:flex-row justify-center w-[90%] md:w-[80%] lg:w-[60%] mx-auto',
   story:'text-gray-400 text-md md:text-md  w-[80%] md:w-[60%] mx-auto text-center my-8'
 }
 const Offer = () => {
