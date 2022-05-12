@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 const style = {
-  wrapper: 'my-12 md:my-24 w-[95%] md:w-[60%] mx-auto flex flex-col md:flex-row',
+  wrapper: 'my-12 md:my-24 w-[95%] md:w-[70%] mx-auto flex flex-col md:flex-row',
   heading: ' my-1 md:my-4 w-[95%] md:w-[85%] lg:w-[60%] text-4xl sm:text-4xl md:text-4xl lg:text-4xl text-gray-900 text-center text-center mx-auto',
   smallHeading: 'my-4 w-[95%] md:w-[60%] mx-auto my-4 text-3xl sm:text-3xl md:text-4xl lg:text-4xl text-[#EBB43D]  text-center',
   details: 'my-4 text-gray-400 text-center mx-4',
