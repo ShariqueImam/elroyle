@@ -3,13 +3,27 @@ import styled from 'styled-components'
 import Navbar from '../Navbar/Navbar'
 import HomeContent from './HomeContent'
 import useWindowSize from '../../hooks/windowSize'
-import Image from 'next/image'
+import { motion } from "framer-motion"
+
 
 const style = {
   wrapper: '',
 
 }
 
+const variantsContainer ={
+	hidden:{
+	opacity:0
+	},
+	visible:{
+	opacity:1,
+	transition:{
+	type:'spring',
+	delay:0.5,
+	when:'beforeChildren' // make this animation to end before children animation occurs
+	}
+	}
+}
 const Home = () => {
 
   const screenWidth = useWindowSize()
@@ -24,17 +38,19 @@ const Home = () => {
       height:100vh;
     `;
 
-
-
   return (
-    <HomeBackground className={style.wrapper}>
-      {/* <Image src="/img/home.jpg" width="100" height="100" layout='fill' /> */}
-      {/* navbar */}
-      <Navbar />
+    <motion.div variants={variantsContainer}
+    initial="hidden"
+    animate='visible'>
+      <HomeBackground className={style.wrapper}>
+        {/* <Image src="/img/home.jpg" width="100" height="100" layout='fill' /> */}
+        {/* navbar */}
+        <Navbar />
 
-      {/* Home content */}
-      <HomeContent />
-    </HomeBackground>
+        {/* Home content */}
+        <HomeContent />
+      </HomeBackground>
+    </motion.div>
   )
 }
 

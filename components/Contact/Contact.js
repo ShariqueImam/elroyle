@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import SingleDay from './SingleDay'
 import ContactForm from './ContactForm'
 import useWindowSize from '../../hooks/windowSize'
-const BgImg = 'https://res.cloudinary.com/shariqcloud/image/upload/v1652378775/Elroyale/pexels-jonathan-borba-2983101_1_yefwm9.jpg'
-
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
+let ani =1
 const style = {
   wrapper: 'flex items-center justify-center',
   contentContainer: 'bg-[#FDFDFC] h-[90%] md:h-[85%] lg:h-[75%] w-[90%] md:w-[80%] lg:w-[60%] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-8 px-8 md:px-12',
@@ -30,11 +31,21 @@ const Contact = () => {
   width: 100vw;
 height: ${screenWidth.width > 1024 ? '90vh' : '130vh'}
 `
-
+const { ref, inView } = useInView({ threshold: 0.2 })
+const animation = useAnimation()
+useEffect(() => {
+  if (inView) {
+    animation.start({ opacity: 1,  y: 0,transition:{duration:0.5} })
+  }
+  if (!inView&& ani==1) {
+    ani =0;
+    animation.start({ opacity: 0, y: -200,transition:{duration:0.5}})
+  }
+}, [inView])
 
   return (
     <ContactBackground className={style.wrapper}>
-      <div className={style.contentContainer}>
+      <motion.div  className={style.contentContainer} ref={ref} animate={animation}>
         <div className={style.side1}>
           <div className={style.card}>
 
@@ -60,7 +71,7 @@ height: ${screenWidth.width > 1024 ? '90vh' : '130vh'}
           <h2 style={{fontFamily:'Poppins, sans-serif'}} className={style.bookingHeading}>You can book your table online easily in just a couple of minutes. We take reservations for lunch, just check the availability of your table</h2>
           <ContactForm/>
         </div>
-      </div>
+      </motion.div>
     </ContactBackground>
   )
 }
