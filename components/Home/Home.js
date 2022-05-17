@@ -14,14 +14,14 @@ const Home = () => {
 
   const screenWidth = useWindowSize()
   const HomeBackground = styled.div`
-      background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.3)),
+      background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.45)),
         url('/img/home.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-attachment: auto;
       width: 100vw;
-      height: 100vh;
+      height:100vh;
     `;
 
 
@@ -39,3 +39,8 @@ const Home = () => {
 }
 
 export default Home
+
+
+
+
+As you said that when setting 2em for h2 before setting 30px for article , it changed the size of the parent

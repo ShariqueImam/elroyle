@@ -7,14 +7,15 @@ const BgImg = 'https://res.cloudinary.com/shariqcloud/image/upload/v1652378775/E
 
 const style = {
   wrapper: 'flex items-center justify-center',
-  contentContainer: 'bg-[#FDFDFC] h-[90%] md:h-[85%] w-[90%] md:w-[75%] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-8',
-  heading: ' my-2 w-[95%] md:w-[85%] lg:w-[60%] text-xl sm:text-xl md:text-3xl lg:text-3xl text-[#F2ECDE] text-center text-center mx-auto',
+  contentContainer: 'bg-[#FDFDFC] h-[90%] md:h-[85%] lg:h-[75%] w-[90%] md:w-[80%] lg:w-[60%] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-8 px-8 md:px-12',
+  heading: ' md:my-6 lg:my-2 w-[95%] md:w-[85%] lg:w-[90%] text-xl sm:text-xl md:text-xl lg:text-2xl text-[#F2ECDE] text-center text-center mx-auto',
   smallHeading: 'my-2 w-[95%] md:w-[60%] mx-auto my-4 text-3xl sm:text-3xl md:text-3xl lg:text-3xl text-[#EBB43D] text-center',
-  side1: 'w-[60%] md:w-[35%] ',
-  card: 'bg-gray-900 px-3 md:px-8 py-4 md:py-6 lg:py-12',
+  side1: 'w-[100%] md:w-[35%] ',
+  card: 'bg-stone-900 px-3 md:px-8 py-4 md:py-6 lg:py-12',
   cardContent: 'border-4 border-double border-[#EBB43D] py-3 md:py-5 lg:py-12',
-  side2: 'w-[90%] md:w-[55%] border-4 border-double border-[#EBB43D] px-8 py-12',
-  bookingHeading:'text-md md:text-md text-center text-gray-500',
+  side2: 'w-[100%] md:w-[55%] border-4 border-double border-[#EBB43D] px-2 md:px-8 py-4 md:py-12',
+  bookingHeading:'text-sm md:text-md text-center text-gray-500 my-4',
+  dayContainer:'md:my-12 lg:my-12',
 
 }
 const Contact = () => {
@@ -27,7 +28,7 @@ const Contact = () => {
   background-position: center;
   background-attachment: fixed;
   width: 100vw;
-height: ${screenWidth.width > 1024 ? '80vh' : '130vh'}
+height: ${screenWidth.width > 1024 ? '90vh' : '130vh'}
 `
 
 

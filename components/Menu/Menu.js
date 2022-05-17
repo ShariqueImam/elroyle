@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { MdOutlineOutdoorGrill } from 'react-icons/md'
+import { GiForkKnifeSpoon } from 'react-icons/gi'
 import LunchMenu from './LunchMenu'
 import DessertsMenu from './DessertsMenu'
 import DrinksMenu from './DrinksMenu'
@@ -20,7 +20,7 @@ const Menu = () => {
     <div className={style.wrapper}>
       <h2 style={{ fontFamily: 'Kristi, cursive' }} className={style.smallHeading}>Our Favourites</h2>
       <h1 style={{ fontFamily: 'Yeseva One, cursive' }} className={style.heading}>Discover Our Menu</h1>
-      <MdOutlineOutdoorGrill className="text-4xl mx-auto text-[#EBB43D] my-3" />
+      <GiForkKnifeSpoon className="text-4xl mx-auto text-[#EBB43D] my-3" />
       <MenuNav menuItem={handleClickMenu} />
       {/* adding the menu */}
       {menuVal === 'lunch' && <LunchMenu />}

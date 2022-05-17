@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdOutlineOutdoorGrill } from 'react-icons/md'
+import { GiForkKnifeSpoon } from 'react-icons/gi'
 import SingleOfferCard from './SingleOfferCard'
 const style = {
   wrapper: 'my-12 flex flex-col mx-auto',
@@ -13,7 +13,7 @@ const Offer = () => {
     <div className={style.wrapper}>
       <h2 style={{ fontFamily: 'Kristi, cursive' }} className={style.smallHeading}> Welcome to the El Royle</h2>
       <h1 style={{ fontFamily: 'Yeseva One, cursive' }} className={style.heading}>Delicious Food, Friendly Staff, Cozy Atmosphere & Positive Emotions</h1>
-      <MdOutlineOutdoorGrill className="text-4xl mx-auto text-[#EBB43D] my-4" />
+      <GiForkKnifeSpoon className="text-4xl mx-auto text-[#EBB43D] my-4" />
       {/* offers card */}
       <div className={style.cardContainer}>
         <SingleOfferCard cardImage={'https://res.cloudinary.com/shariqcloud/image/upload/v1652275409/Elroyale/pexels-william-choquette-2641886_1_yc9ivp.jpg'} cardText={'Start eating better'} />

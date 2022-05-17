@@ -3,12 +3,9 @@ import React from 'react'
 
 
 const style = {
-    wrapper: 'w-[90%] mx-auto flex flex-col justify-around',
-    input:'outline-none placeholder:text-gray-900 mx-3 px-2 py-1 my-3',
-    name:'',
-    email:'',
-    phone:'',
-    btn:'px-3 py-3  bg-gray-900 text-[#FDFDFC] mx-3 my-4'
+    wrapper: 'w-[90%] mx-auto flex flex-col justify-around md:my-3 lg:my-8',
+    input:'focus:ring-transparent outline-none focus:border-transparent border-gray-200 border-2 placeholder:text-gray-500 mx-1 md:mx-3 px-2 py-3 my-3 rounded bg-[#e7e5e4] bg-opacity-[0.3]',
+    btn:'px-3 py-3  bg-stone-900 text-gray-50 mx-1 md:mx-3 my-5 hover:bg-stone-800 transition duration-[300ms] cursor-pointer '
 
 }
 const ContactForm = () => {
@@ -17,7 +14,7 @@ const ContactForm = () => {
             <input type="text" className={style.input} placeholder="Name"/>
             <input type="text" className={style.input} placeholder="Email"/>
             <input type="text" className={style.input} placeholder="Phone"/>
-            <button className={style.btn}>Book My Table</button>
+            <button className={style.btn} type="submit">Book My Table</button>
         </form>
     )
 }
