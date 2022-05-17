@@ -43,4 +43,3 @@ export default Home
 
 
 
-As you said that when setting 2em for h2 before setting 30px for article , it changed the size of the parent
