@@ -5,9 +5,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-
-        <title>El Royle | Restaurant</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width,This is a website created for a fast food restaurant"/>
+        <title  key={'title'}>El Royle | Restaurant</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+      name="description"
+      content="A website restaurant for online presense"
+    />
         <script>
           var viewport = document.querySelector("meta[name=viewport]");
           viewport.setAttribute(
