@@ -40,7 +40,7 @@ const Booking = () => {
         <h2 className={style.smallHeading} style={{ fontFamily: 'Kristi, cursive' }} >We Create Delicious Memories</h2>
         <h2 className={style.heading} style={{ fontFamily: 'Yeseva One, cursive' }}>Pull Up A Chair. Take A Taste & Come Join Us</h2>
         <h3 className={style.detail} style={{ fontFamily: 'Poppins, sans-serif' }} >We have awesome recipes and the most talented chefs in town!</h3>
-        <button className={style.bookButton} style={{ fontFamily: 'Yeseva One, cursive' }}>Book a Table</button>
+        <button aria-label="Button to book a table" className={style.bookButton} style={{ fontFamily: 'Yeseva One, cursive' }}>Book a Table</button>
       </motion.div>
     </BookingBackground>
   )

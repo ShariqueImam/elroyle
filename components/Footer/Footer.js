@@ -22,7 +22,6 @@ const Footer = () => {
       <div className={style.signature}>
         <Signature />
       </div>
-      <div></div>
     </div>
   )
 }

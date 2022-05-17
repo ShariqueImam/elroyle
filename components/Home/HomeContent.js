@@ -17,8 +17,8 @@ const HomeContent = () => {
         <h2 className={style.heading} style={{fontFamily:'Yeseva One, cursive'}}>Offering The Best Tasting Experience</h2>
         <h3 className={style.smallHeading} style={{fontFamily:'Kristi, cursive'}} >Fresh Ingredeints, Tasty Meals and Creative Chefs</h3>
         <div className={style.buttonContainer}>
-          <button className={style.menu}>View Menu</button>
-          <button className={style.table}>Book Table</button>
+          <button aria-label="Button to view menu" className={style.menu}>View Menu</button>
+          <button aria-label="Button to book table" className={style.table}>Book Table</button>
         </div>
       </div>
     </div >

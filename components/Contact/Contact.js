@@ -63,8 +63,6 @@ useEffect(() => {
 
             </div>
           </div>
-          <div></div>
-          <div></div>
         </div>
         <div className={style.side2}>
           {/* form */}

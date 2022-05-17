@@ -27,7 +27,7 @@ const Navbar = () => {
                     <div className="target flex items-center md:order-2">
                         <div className={style.reservation} style={{ fontFamily: 'Asul, sans-serif' }}>Reservation</div>
                         {/* the hamburger button */}
-                        <button onClick={handleSmallMenu} data-collapse-toggle="mobile-menu-2" type="button" className=" inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-600 transtion duration-[300ms]" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <button aria-label="Button to toggle mobile menu" onClick={handleSmallMenu} data-collapse-toggle="mobile-menu-2" type="button" className=" inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-600 transtion duration-[300ms]" aria-controls="mobile-menu-2" aria-expanded="false">
                             {isMenuOpen ?<ImCross className={`${isMenuOpen && 'flex'}`}/>:                           <GiHamburgerMenu className={`${isMenuOpen && 'hidden'}`}/>}
                         </button>   
                     </div>

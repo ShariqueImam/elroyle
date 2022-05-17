@@ -11,19 +11,19 @@ const Signature = () => {
         <div className={style.wrapper}>
             <ul style={{ fontFamily: 'Poppins, sans-serif' }} className="py-0 md:py-0 flex text-xs md:text-md tracking-wider ">
                 <li>
-                    <a href="#" className={style.list} aria-current="page">Home</a>
+                    <a aria-label="Home" href="#" className={style.list} aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#" className={style.list}>About</a>
+                    <a aria-label="About" href="#" className={style.list}>About</a>
                 </li>
                 <li>
-                    <a href="#" className={style.list}>Services</a>
+                    <a  aria-label="Services" href="#" className={style.list}>Services</a>
                 </li>
                 <li>
-                    <a href="#" className={style.list}>Pricing</a>
+                    <a aria-label="Pricing" href="#" className={style.list}>Pricing</a>
                 </li>
                 <li>
-                    <a href="#" className={style.list}>Contact</a>
+                    <a aria-label="Contact" href="#" className={style.list}>Contact</a>
                 </li>
             </ul>
 

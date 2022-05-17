@@ -31,14 +31,13 @@ const Event = () => {
   return (
     <div className={style.wrapper}>
       <motion.div ref={ref} animate={animation1} className={style.side1}>
-        <Image src={'https://res.cloudinary.com/shariqcloud/image/upload/v1652159534/Elroyale/2_ghe8zl.jpg'} height="450" width="350" />
-        <Image src={'https://res.cloudinary.com/shariqcloud/image/upload/v1652159533/Elroyale/1_1_beaixv.jpg'} height="450" width="350" />
+        <Image alt="Image for arranging the events" src={'https://res.cloudinary.com/shariqcloud/image/upload/v1652159534/Elroyale/2_ghe8zl.jpg'} height="450" width="350" />
+        <Image alt="Image for arranging the events" src={'https://res.cloudinary.com/shariqcloud/image/upload/v1652159533/Elroyale/1_1_beaixv.jpg'} height="450" width="350" />
       </motion.div >
       <motion.div ref={ref} animate={animation2} className={style.side2}>
         <h2 className={style.smallHeading} style={{ fontFamily: 'Kristi, cursive' }}>Host Your Event</h2>
         <h2 className={style.heading} style={{ fontFamily: 'Yeseva One, cursive' }}>A Warm & Friendly Atmosphere</h2>
         <h2 className={style.details} style={{ fontFamily: 'Poppins, sans-serif' }}>Allow us to make your next special event extra special. We cater for all sized functions, ideal for your intimate gathering, our team can curate a menu to suit your taste</h2>
-        <h2></h2>
       </motion.div >
 
     </div>

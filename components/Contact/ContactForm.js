@@ -14,7 +14,7 @@ const ContactForm = () => {
             <input type="text" className={style.input} placeholder="Name"/>
             <input type="text" className={style.input} placeholder="Email"/>
             <input type="text" className={style.input} placeholder="Phone"/>
-            <button className={style.btn} type="submit">Book My Table</button>
+            <button aria-label="Button to submit the form"  className={style.btn} type="submit">Book My Table</button>
         </form>
     )
 }
