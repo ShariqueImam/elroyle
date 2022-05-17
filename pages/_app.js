@@ -6,13 +6,13 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
 
-        <title>Website for a fast food restaurant</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" description="This is a website created for a fast food restaurant"/>
+        <title>El Royle | Restaurant</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width,This is a website created for a fast food restaurant"/>
         <script>
           var viewport = document.querySelector("meta[name=viewport]");
           viewport.setAttribute(
           "content",
-          viewport.content + ", height=" + `${screenWidth.height}`
+          viewport.content + ", height=" + 100vh
           );
         </script>
       </Head>

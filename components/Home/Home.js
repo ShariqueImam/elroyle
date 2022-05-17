@@ -29,7 +29,7 @@ const Home = () => {
   const screenWidth = useWindowSize()
   const HomeBackground = styled.div`
       background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.45)),
-        url('/img/home.jpg');
+        url('/img/home.webp');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;

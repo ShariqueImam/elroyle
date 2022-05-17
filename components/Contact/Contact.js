@@ -23,7 +23,7 @@ const Contact = () => {
   const screenWidth = useWindowSize()
   const ContactBackground = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/img/contact.jpg);
+    url(/img/contact.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

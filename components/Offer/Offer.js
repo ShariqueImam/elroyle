@@ -31,9 +31,9 @@ ani=0;
       <GiForkKnifeSpoon className="text-4xl mx-auto text-[#EBB43D] my-4" />
       {/* offers card */}
       <div className={style.cardContainer}>
-        <SingleOfferCard cardImage={'https://res.cloudinary.com/shariqcloud/image/upload/v1652275409/Elroyale/pexels-william-choquette-2641886_1_yc9ivp.jpg'} cardText={'Start eating better'} />
-        <SingleOfferCard cardImage={'https://res.cloudinary.com/shariqcloud/image/upload/v1652275409/Elroyale/pexels-pixabay-327158_u665i0.jpg'} cardText={'Quality is the heart'} />
-        <SingleOfferCard cardImage={'https://res.cloudinary.com/shariqcloud/image/upload/v1652275409/Elroyale/pexels-marta-dzedyshko-2067473_b5sfo3.jpg'} cardText={'Hot and ready to serve'} />
+        <SingleOfferCard cardImage={'/img/1.webp'} cardText={'Start eating better'} />
+        <SingleOfferCard cardImage={'/img/2.webp'} cardText={'Quality is the heart'} />
+        <SingleOfferCard cardImage={'/img/3.webp'} cardText={'Hot and ready to serve'} />
       </div>
       {/* story */}
       <h2 className={style.story}>El Royale was the first restaurant to open in Egypt, the resturant designed with the history in mind we have created a soft industrial dining room.</h2>

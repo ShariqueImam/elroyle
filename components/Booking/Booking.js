@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-const BgImg = 'https://res.cloudinary.com/shariqcloud/image/upload/v1652159535/Elroyale/1_rocjfx.jpg'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 let ani = 1;
 const BookingBackground = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(${BgImg});
+    url(/img/4.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,8 +27,8 @@ const Booking = () => {
     if (inView) {
       animation.start({ opacity: 1, y: 0, transition: { duration: 0.8 } })
     }
-    if (!inView) {
-
+    if (!inView && ani==1) {
+ani=0;
       animation.start({ opacity: 0, y: 200, transition: { duration: 0.8 } })
     }
   }, [inView])

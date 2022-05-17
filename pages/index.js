@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Home from '../components/Home/Home'
 import Offer from '../components/Offer/Offer'
 import Menu from '../components/Menu/Menu'
