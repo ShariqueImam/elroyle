@@ -41,4 +41,5 @@ ani=0;
   )
 }
 
+
 export default Offer

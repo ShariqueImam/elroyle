@@ -22,7 +22,7 @@ const Signature = () => {
                 <li>
                     <a aria-label="Pricing" href="#" className={style.list}>Pricing</a>
                 </li>
-                <li>
+        <li>
                     <a aria-label="Contact" href="#" className={style.list}>Contact</a>
                 </li>
             </ul>

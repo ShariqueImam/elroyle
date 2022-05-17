@@ -7,6 +7,7 @@ const style = {
   wrapper: 'bg-stone-800 pt-24',
 
 }
+
 const Footer = () => {
   return (
     <div className={style.wrapper}>

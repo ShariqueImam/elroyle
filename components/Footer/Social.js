@@ -12,6 +12,5 @@ const Social = () => {
       <a aria-label="link to facebook account twitter" className={style.social} target='_black' href="https://www.twitter.com"><BsTwitter/></a>
     </div>
   )
-}
-
+}    
 export default Social;

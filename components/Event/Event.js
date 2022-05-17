@@ -28,6 +28,8 @@ const Event = () => {
       animation2.start({ opacity: 0,  x: 200 })
     }
   }, [inView])
+  
+
   return (
     <div className={style.wrapper}>
       <motion.div ref={ref} animate={animation1} className={style.side1}>

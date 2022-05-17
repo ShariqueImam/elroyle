@@ -13,6 +13,7 @@ const BookingBackground = styled.div`
   width: 100vw;
   height: 60vh;
 `;
+
 const style = {
   wrapper: 'flex flex-col items-center justify-around',
   heading: ' w-[95%] md:w-[85%] lg:w-[60%] text-6xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F2ECDE] text-center text-center mx-auto',

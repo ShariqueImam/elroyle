@@ -15,3 +15,4 @@ const SingleOfferCard = ({cardImage,cardText}) => {
 }
 
 export default SingleOfferCard
+

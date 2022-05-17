@@ -29,15 +29,15 @@ const Contact = () => {
   background-position: center;
   background-attachment: fixed;
   width: 100vw;
-height: ${screenWidth.width > 1024 ? '90vh' : '130vh'}
-`
+height: ${screenWidth.width > 1024 ? '90vh' : '130vh'}`
+
 const { ref, inView } = useInView({ threshold: 0.2 })
 const animation = useAnimation()
 useEffect(() => {
   if (inView) {
     animation.start({ opacity: 1,  y: 0,transition:{duration:0.5} })
   }
-  if (!inView&& ani==1) {
+  if (!inView && ani==1) {
     ani =0;
     animation.start({ opacity: 0, y: -200,transition:{duration:0.5}})
   }

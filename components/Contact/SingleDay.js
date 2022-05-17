@@ -13,5 +13,6 @@ const SingleDay = ({day,time}) => {
     </div>
   )
 }
+   
 
 export default SingleDay

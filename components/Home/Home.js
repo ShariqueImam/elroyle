@@ -24,6 +24,7 @@ const variantsContainer ={
 	}
 	}
 }
+
 const Home = () => {
 
   const screenWidth = useWindowSize()
