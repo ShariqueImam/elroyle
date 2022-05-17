@@ -11,13 +11,7 @@ function MyApp({ Component, pageProps }) {
       name="description"
       content="A website restaurant for online presense"
     />
-        <script>
-          var viewport = document.querySelector("meta[name=viewport]");
-          viewport.setAttribute(
-          "content",
-          viewport.content + ", height=" + 100vh
-          );
-        </script>
+
       </Head>
       <Component {...pageProps} />
     </>

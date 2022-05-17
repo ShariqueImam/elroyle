@@ -9,7 +9,7 @@ const style = {
   menu: 'my-4 px-5 md:px-6 lg:px-12 py-2 md:py-2 lg:py-4 bg-[#EBB43D] text-[#F2ECDE] font-bold tracking-wide hover:bg-opacity-[0.95] hover:scale-[0.9] cursor-pointer transition duration-[300ms] box-border text-lg',
   table: 'my-4 px-5 md:px-6 lg:px-12 py-2 md:py-2 lg:py-4 border-2 border-gray-50 hover:bg-[#F2ECDE] hover:text-gray-800  transition duration-[300ms] cursor-pointer box-border text-[#F2ECDE] font-bold tracking-wide text-lg',
 }
-HomeContent = () => {
+const HomeContent = () => {
   return (
     <div className={style.wrapper} >
       <div className={style.content}>

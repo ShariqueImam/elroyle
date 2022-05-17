@@ -7,7 +7,7 @@ import Event from '../components/Event/Event'
 import Footer from '../components/Footer/Footer'
 const App = () => {
   return (
-    <div className="overflow-x-hidden bg-[#FDFDFC] ">
+    <div className="overflow-x-hidden bg-[#FDFDFC] " style={{fontDisplay:'swap'}}>
       <Home />
       <Offer />
       <Menu />
