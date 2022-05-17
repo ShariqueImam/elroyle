@@ -22,7 +22,7 @@ const Navbar = () => {
             <nav className="border-gray-700 px-2 sm:px-4 py-2.5 rounded bg-gray-50 md:bg-transparent border-b-[0.1px] ">
                 <div className="container flex  justify-between items-center mx-auto flex-wrap">
                     <a href="/" className="flex items-center scale-[1.1]">
-                        <img src={`${screenWidth.width > 1024 ? 'https://res.cloudinary.com/shariqcloud/image/upload/v1652183040/Elroyale/logo-light_zdf9hx.png' : 'https://res.cloudinary.com/shariqcloud/image/upload/v1652159561/Elroyale/logo-dark_bcjtin.png'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                        <img src={`${screenWidth.width > 1024 ? '/img/5.webp' : '/img/6.webp'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                     </a>
                     <div className="target flex items-center md:order-2">
                         <div className={style.reservation} style={{ fontFamily: 'Asul, sans-serif' }}>Reservation</div>
