@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import Head from "next/head";
-import screenWidth from '../hooks/windowSize'
 function MyApp({ Component, pageProps }) {
   return (
     <>
