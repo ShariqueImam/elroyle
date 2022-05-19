@@ -20,7 +20,7 @@ const DropDownMenu = () => {
                     <a href="#" className={style.list}>Services</a>
                 </li>
                 <li>
-                    <a href="#" className={style.list}>Pricing</a>
+                    <a href="#" className={style.list}>Menu</a>
                 </li>
                 <li>
                     <a href="#" className={style.list}>Contact</a>

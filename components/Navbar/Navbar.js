@@ -3,20 +3,23 @@ import useWindowSize from '../hooks/windowSize'
 import DropDownMenu from './DropDownMenu'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {ImCross} from 'react-icons/im'
-const Navbar = () => {
+const Navbar = (props) => {
 
     const screenWidth = useWindowSize()
     const style = {
         wrapper: 'absolute md:relative text-gray-200 w-[100%] lg:w-[75%] mx-auto',
-        list: 'block my-4 py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 font-bold md:p-0 dark:text-gray-400 md:dark:hover:text-white  hover:text-[#EFC262] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-[300ms] border-move-animation',
-        listHome: 'block my-4 py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent font-bold md:p-0 border-b-2 border-[#EFC262] text-[#EFC262] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-[300ms]',
+        list: 'cursor-pointer  block my-4 py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 font-bold md:p-0 dark:text-gray-400 md:dark:hover:text-white  hover:text-[#EFC262] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-[300ms] border-move-animation',
+        listHome: 'cursor-pointer block my-4 py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent font-bold md:p-0 border-b-2 border-[#EFC262] text-[#EFC262] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-[300ms]',
         reservation: `px-2 md:px-6 py-2 md:py-2 border-2 border-white  font-bold hover:bg-gray-100 hover:text-gray-900 transition duration-[300ms] cursor-pointer ${screenWidth.width < 1024 ? 'bg-gray-900 text-[#F2ECDE]' : 'bg-transparent text-gray-200'}`,
     }
     const [isMenuOpen,setIsMenuOpen] =useState(false)
     const handleSmallMenu =()=>{
         setIsMenuOpen(prevValue => !prevValue)
     }
-    console.log(isMenuOpen)
+    const onScroll = (val)=>{
+        props.onScroll(val)
+        console.log(val);
+    }
     return (
         <div className={style.wrapper}>
             <nav className="border-gray-700 px-2 sm:px-4 py-2.5 rounded bg-gray-50 md:bg-transparent border-b-[0.1px] ">
@@ -38,19 +41,19 @@ const Navbar = () => {
                     <div style={{ fontFamily: 'Poppins, sans-serif' }} className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-md md:text-md tracking-wider ">
                             <li>
-                                <a href="#" className={style.listHome} aria-current="page">Home</a>
+                                <a onScroll={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</a>
                             </li>
                             <li>
-                                <a href="#" className={style.list}>About</a>
+                                <a onScroll={()=>{onScroll('about')}}  className={style.list}>About</a>
                             </li>
                             <li>
-                                <a href="#" className={style.list}>Services</a>
+                                <a onScroll={()=>{onScroll('services')}}  className={style.list}>Services</a>
                             </li>
                             <li>
-                                <a href="#" className={style.list}>Pricing</a>
+                                <a onScroll={()=>{onScroll('menu')}}  className={style.list}>Menu</a>
                             </li>
                             <li>
-                                <a href="#" className={style.list}>Contact</a>
+                                <a onScroll={()=>{onScroll('contact')}}  className={style.list}>Contact</a>
                             </li>
                         </ul>
                     </div>
