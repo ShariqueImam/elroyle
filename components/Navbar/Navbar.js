@@ -25,7 +25,7 @@ const Navbar = (props) => {
             <nav className="border-gray-700 px-2 sm:px-4 py-2.5 rounded bg-gray-50 md:bg-transparent border-b-[0.1px] ">
                 <div className="container flex  justify-between items-center mx-auto flex-wrap">
                     <a href="/" className="flex items-center scale-[1.1]">
-                        <img src={`${screenWidth.width > 1024 ? '/img/5.webp' : '/img/6.webp'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                        <img src={`${screenWidth.width > 1024 ? '/img/logo1.webp' : '/img/logo2.webp'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                     </a>
                     <div className=" flex    items-center md:order-2">
                         <div className={style.reservation} onClick={()=>{onScroll('booking')}} style={{ fontFamily: 'Poppins, sans-serif' }} >Reservation</div>
