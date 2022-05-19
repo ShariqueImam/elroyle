@@ -5,22 +5,27 @@ import Booking from '../components/Booking/Booking'
 import Event from '../components/Event/Event'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
-import scroller from 'react-scroll'
+import { scroller } from 'react-scroll'
 const App = () => {
+
+
+  
+
   const onScroll = (value) => {
     scroller.scrollTo(`${value}`, {
-      duration: 800,
+      duration: 900,
       delay: 0,
       smooth: 'easeInOutQuart',
     })
   }
+
   return (
     <div
       className="overflow-x-hidden bg-[#FDFDFC] "
       style={{ fontDisplay: 'swap' }}
     >
       <div className="home">
-        <Home onScroll={onScroll}/>
+        <Home onScroll={onScroll} />
       </div>
       <div className="about">
         <Offer />
@@ -28,7 +33,7 @@ const App = () => {
       <div className="menu">
         <Menu />
       </div>
-      <div className="booking">
+      <div className="">
         <Booking />
       </div>
       <div className="services">
@@ -37,9 +42,7 @@ const App = () => {
       <div className="contact">
         <Contact />
       </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }

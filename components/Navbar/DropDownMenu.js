@@ -7,22 +7,25 @@ const style = {
 
 
 }
-const DropDownMenu = () => {
+const DropDownMenu = (props) => {
+    const onScroll = (val) => {
+        props.onScroll(val)      
+    }
     return (
         <ul clasName={style.wrapper} style={{fontFamily: 'Poppins, sans-serif'}}>
-                <li>
+                <li onClick={()=>{onScroll('home')}}>
                     <a href="#" className={style.list} aria-current="page">Home</a>
                 </li>
-                <li>
+                <li onClick={()=>{onScroll('about')}}>
                     <a href="#" className={style.list}>About</a>
                 </li>
-                <li>
+                <li onClick={()=>{onScroll('services')}}>
                     <a href="#" className={style.list}>Services</a>
                 </li>
-                <li>
+                <li onClick={()=>{onScroll('menu')}}>
                     <a href="#" className={style.list}>Menu</a>
                 </li>
-                <li>
+                <li onClick={()=>{onScroll('contact')}}>
                     <a href="#" className={style.list}>Contact</a>
                 </li>
         </ul>

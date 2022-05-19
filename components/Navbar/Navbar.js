@@ -18,7 +18,6 @@ const Navbar = (props) => {
     }
     const onScroll = (val)=>{
         props.onScroll(val)
-        console.log(val);
     }
     return (
         <div className={style.wrapper}>
@@ -36,24 +35,24 @@ const Navbar = (props) => {
                     </div>
                     {/* content for small screens menu open */}
                     <div className={`w-full ${isMenuOpen ? 'flex':'hidden'} items-center justify-center`}>
-                        <DropDownMenu/>
+                        <DropDownMenu onScroll={onScroll}/>
                     </div>
                     <div style={{ fontFamily: 'Poppins, sans-serif' }} className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-md md:text-md tracking-wider ">
                             <li>
-                                <a onScroll={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</a>
+                                <a onClick={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</a>
                             </li>
                             <li>
-                                <a onScroll={()=>{onScroll('about')}}  className={style.list}>About</a>
+                                <a onClick={()=>{onScroll('about')}}  className={style.list}>About</a>
                             </li>
                             <li>
-                                <a onScroll={()=>{onScroll('services')}}  className={style.list}>Services</a>
+                                <a onClick={()=>{onScroll('services')}}  className={style.list}>Services</a>
                             </li>
                             <li>
-                                <a onScroll={()=>{onScroll('menu')}}  className={style.list}>Menu</a>
+                                <a onClick={()=>{onScroll('menu')}}  className={style.list}>Menu</a>
                             </li>
                             <li>
-                                <a onScroll={()=>{onScroll('contact')}}  className={style.list}>Contact</a>
+                                <a onClick={()=>{onScroll('contact')}}  className={style.list}>Contact</a>
                             </li>
                         </ul>
                     </div>
