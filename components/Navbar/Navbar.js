@@ -41,19 +41,19 @@ const Navbar = (props) => {
                     <div style={{ fontFamily: 'Poppins, sans-serif' }} className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-md md:text-md tracking-wider ">
                             <li>
-                                <a aria-label="link of the navbar" onClick={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</a>
+                                <p aria-label="link of the navbar"  onClick={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</p>
                             </li>
                             <li>
-                                <a aria-label="link of the navbar" onClick={()=>{onScroll('about')}}  className={style.list}>About</a>
+                                <p aria-label="link of the navbar"   onClick={()=>{onScroll('about')}}  className={style.list}>About</p>
                             </li>
                             <li>
-                                <a aria-label="link of the navbar" onClick={()=>{onScroll('services')}}  className={style.list}>Services</a>
+                                <p aria-label="link of the navbar" onClick={()=>{onScroll('services')}}  className={style.list}>Services</p>
                             </li>
                             <li>
-                                <a aria-label="link of the navbar" onClick={()=>{onScroll('menu')}}  className={style.list}>Menu</a>
+                                <p aria-label="link of the navbar" onClick={()=>{onScroll('menu')}}  className={style.list}>Menu</p>
                             </li>
                             <li>
-                                <a aria-label="link of the navbar" onClick={()=>{onScroll('contact')}}  className={style.list}>Contact</a>
+                                <p aria-label="link of the navbar" onClick={()=>{onScroll('contact')}}  className={style.list}>Contact</p>
                             </li>
                         </ul>
                     </div>
