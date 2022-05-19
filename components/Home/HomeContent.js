@@ -1,5 +1,4 @@
 import React from 'react'
-
 const style = {
   wrapper: 'h-[90%] flex items-center justify-around w-[95%] md:w-[80%] m-auto ',
   content: 'h-[80%] sm:h-[60%] md:h-[70%] lg:h-[70%]  flex flex-col w-full items-center justify-around mt-24 md:mt-0',

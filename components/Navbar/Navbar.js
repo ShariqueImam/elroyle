@@ -11,7 +11,7 @@ const Navbar = (props) => {
         wrapper: 'absolute md:relative text-gray-200 w-[100%] lg:w-[75%] mx-auto',
         list: 'cursor-pointer  block my-4 py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 font-bold md:p-0 dark:text-gray-400 md:dark:hover:text-white  hover:text-[#EFC262] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-[300ms] border-move-animation',
         listHome: 'cursor-pointer block my-4 py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent font-bold md:p-0 border-b-2 border-[#EFC262] text-[#EFC262] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-[300ms]',
-        reservation: `px-2 md:px-6 py-2 md:py-2 border-2 border-white  font-bold hover:bg-gray-100 hover:text-gray-900 transition duration-[300ms] cursor-pointer ${screenWidth.width < 1024 ? 'bg-gray-900 text-[#F2ECDE]' : 'bg-transparent text-gray-200'}`,
+        reservation: `px-2 md:px-6 py-2 md:py-2   font-bold hover:bg-gray-50 border-transparent border-2 hover:border-gray-900 hover:text-gray-900 transition duration-[300ms] cursor-pointer ${screenWidth.width < 1024 ? 'bg-gray-900 text-[#F2ECDE]' : 'bg-transparent text-gray-200'}`,
     }
     const [isMenuOpen,setIsMenuOpen] =useState(false)
     const handleSmallMenu =()=>{
@@ -27,10 +27,10 @@ const Navbar = (props) => {
                     <a href="/" className="flex items-center scale-[1.1]">
                         <img src={`${screenWidth.width > 1024 ? '/img/5.webp' : '/img/6.webp'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                     </a>
-                    <div className="target flex items-center md:order-2">
-                        <div className={style.reservation} onClick={()=>{onScroll('booking')}} style={{ fontFamily: 'Asul, sans-serif' }}>Reservation</div>
+                    <div className=" flex items-center md:order-2">
+                        <div className={style.reservation} onClick={()=>{onScroll('booking')}} style={{ fontFamily: 'Poppins, sans-serif' }} >Reservation</div>
                         {/* the hamburger button */}
-                        <button aria-label="Button to toggle mobile menu" onClick={handleSmallMenu} data-collapse-toggle="mobile-menu-2" type="button" className=" inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-600 transtion duration-[300ms]" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <button aria-label="Button to toggle mobile menu" onClick={handleSmallMenu} data-collapse-toggle="mobile-menu-2" type="button" className=" inline-flex items-center p-2 ml-1 text-xl text-gray-900  rounded-lg md:hidden hover:bg-gray-100 transtion duration-[300ms]" aria-controls="mobile-menu-2" aria-expanded="false">
                             {isMenuOpen ?<ImCross className={`${isMenuOpen && 'flex'}`}/>:                           <GiHamburgerMenu className={`${isMenuOpen && 'hidden'}`}/>}
                         </button>   
                     </div>
