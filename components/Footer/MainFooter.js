@@ -23,7 +23,7 @@ const MainFooter = () => {
             </div>
             <div className={style.center}>
                 {/* logo */}
-                <Image src="/img/footerlogo.webp" height='50' width="140" alt='logo'/>
+                <Image src="/img/logo1.webp" height='50' width="140" alt='logo'/>
                 <h2 className={style.info}>El Royale was the first restaurant to open in Pakistan, the resturant was designed with the history in mind we have created a soft industrial dining room.</h2>
 
             </div>
