@@ -26,7 +26,7 @@ ani=0;
   }, [inView])
   return (
     <motion.div className={style.wrapper} ref={ref} animate={animation}>
-      <h2 style={{ fontFamily: 'Kristi, cursive' }} className={style.smallHeading}> Welcome to the El Royle</h2>
+      <h2 style={{ fontFamily: 'Kristi, cursive' }} className={style.smallHeading}> Welcome to the Ducky Foods</h2>
       <h1 style={{ fontFamily: 'Yeseva One, cursive' }} className={style.heading}>Delicious Food, Friendly Staff, Cozy Atmosphere & Positive Emotions</h1>
       <GiForkKnifeSpoon className="text-4xl mx-auto text-[#EBB43D] my-4" />
       {/* offers card */}
@@ -36,7 +36,7 @@ ani=0;
         <SingleOfferCard cardImage={'/img/3.webp'} cardText={'Hot and ready to serve'} />
       </div>
       {/* story */}
-      <h2 className={style.story}>El Royale was the first restaurant to open in Egypt, the resturant designed with the history in mind we have created a soft industrial dining room.</h2>
+      {/* <h2 className={style.story}>El Royale was the first restaurant to open in Egypt, the resturant designed with the history in mind we have created a soft industrial dining room.</h2> */}
     </motion.div>
   )
 }
