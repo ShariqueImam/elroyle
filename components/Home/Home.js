@@ -46,7 +46,7 @@ const Home = (props) => {
         <Navbar onScroll={onScroll} />
 
         {/* Home content */}
-        <HomeContent />
+        <HomeContent onScroll={onScroll}/>
       </HomeBackground>
     </motion.div>
   )

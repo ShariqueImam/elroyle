@@ -40,7 +40,8 @@ ani=0;
         <h2 className={style.smallHeading} style={{ fontFamily: 'Kristi, cursive' }} >We Create Delicious Memories</h2>
         <h2 className={style.heading} style={{ fontFamily: 'Yeseva One, cursive' }}>Pull Up A Chair. Take A Taste & Come Join Us</h2>
         <h3 className={style.detail} style={{ fontFamily: 'Poppins, sans-serif' }} >We have awesome recipes and the most talented chefs in town!</h3>
-        <button aria-label="Button to book a table" className={style.bookButton} style={{ fontFamily: 'Yeseva One, cursive' }}>Book a Table</button>
+        <button aria-label="Button to book a table" className={style.bookButton} style={{ fontFamily: 'Yeseva One, cursive' }}><a href="https://wa.me/+923039695850?text=How%20can%20I%20help%20you?"
+                 target="__blank">Book a Table</a></button>
       </motion.div>
     </BookingBackground>
   )

@@ -9,7 +9,7 @@ import { scroller } from 'react-scroll'
 const App = () => {
 
 
-  
+
 
   const onScroll = (value) => {
     scroller.scrollTo(`${value}`, {
@@ -33,7 +33,7 @@ const App = () => {
       <div className="menu">
         <Menu />
       </div>
-      <div className="">
+      <div className="booking">
         <Booking />
       </div>
       <div className="services">

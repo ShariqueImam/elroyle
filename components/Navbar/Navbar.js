@@ -3,6 +3,7 @@ import useWindowSize from '../hooks/windowSize'
 import DropDownMenu from './DropDownMenu'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {ImCross} from 'react-icons/im'
+import { on } from 'events'
 const Navbar = (props) => {
 
     const screenWidth = useWindowSize()
@@ -27,7 +28,7 @@ const Navbar = (props) => {
                         <img src={`${screenWidth.width > 1024 ? '/img/5.webp' : '/img/6.webp'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                     </a>
                     <div className="target flex items-center md:order-2">
-                        <div className={style.reservation} style={{ fontFamily: 'Asul, sans-serif' }}>Reservation</div>
+                        <div className={style.reservation} onClick={()=>{onScroll('booking')}} style={{ fontFamily: 'Asul, sans-serif' }}>Reservation</div>
                         {/* the hamburger button */}
                         <button aria-label="Button to toggle mobile menu" onClick={handleSmallMenu} data-collapse-toggle="mobile-menu-2" type="button" className=" inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-600 transtion duration-[300ms]" aria-controls="mobile-menu-2" aria-expanded="false">
                             {isMenuOpen ?<ImCross className={`${isMenuOpen && 'flex'}`}/>:                           <GiHamburgerMenu className={`${isMenuOpen && 'hidden'}`}/>}
@@ -40,19 +41,19 @@ const Navbar = (props) => {
                     <div style={{ fontFamily: 'Poppins, sans-serif' }} className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-md md:text-md tracking-wider ">
                             <li>
-                                <a onClick={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</a>
+                                <a aria-label="link of the navbar" onClick={()=>{onScroll('home')}}  className={style.listHome} aria-current="page" >Home</a>
                             </li>
                             <li>
-                                <a onClick={()=>{onScroll('about')}}  className={style.list}>About</a>
+                                <a aria-label="link of the navbar" onClick={()=>{onScroll('about')}}  className={style.list}>About</a>
                             </li>
                             <li>
-                                <a onClick={()=>{onScroll('services')}}  className={style.list}>Services</a>
+                                <a aria-label="link of the navbar" onClick={()=>{onScroll('services')}}  className={style.list}>Services</a>
                             </li>
                             <li>
-                                <a onClick={()=>{onScroll('menu')}}  className={style.list}>Menu</a>
+                                <a aria-label="link of the navbar" onClick={()=>{onScroll('menu')}}  className={style.list}>Menu</a>
                             </li>
                             <li>
-                                <a onClick={()=>{onScroll('contact')}}  className={style.list}>Contact</a>
+                                <a aria-label="link of the navbar" onClick={()=>{onScroll('contact')}}  className={style.list}>Contact</a>
                             </li>
                         </ul>
                     </div>
