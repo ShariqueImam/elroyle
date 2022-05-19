@@ -27,7 +27,7 @@ const Navbar = (props) => {
                     <a href="/" className="flex items-center scale-[1.1]">
                         <img src={`${screenWidth.width > 1024 ? '/img/5.webp' : '/img/6.webp'}`} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                     </a>
-                    <div className=" flex items-center md:order-2">
+                    <div className=" flex    items-center md:order-2">
                         <div className={style.reservation} onClick={()=>{onScroll('booking')}} style={{ fontFamily: 'Poppins, sans-serif' }} >Reservation</div>
                         {/* the hamburger button */}
                         <button aria-label="Button to toggle mobile menu" onClick={handleSmallMenu} data-collapse-toggle="mobile-menu-2" type="button" className=" inline-flex items-center p-2 ml-1 text-xl text-gray-900  rounded-lg md:hidden hover:bg-gray-100 transtion duration-[300ms]" aria-controls="mobile-menu-2" aria-expanded="false">
