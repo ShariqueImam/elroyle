@@ -24,7 +24,7 @@ const App = () => {
       className="overflow-x-hidden bg-[#FDFDFC] "
       style={{ fontDisplay: 'swap' }}
     >
-      <div className="home">
+      <div className="home flex">
         <Home onScroll={onScroll} />
       </div>
       <div className="about">
