@@ -4,7 +4,7 @@ import React from 'react'
 
 const style = {
     wrapper: 'w-[90%] mx-auto flex flex-col justify-around md:my-3 lg:my-8',
-    input:'focus:ring-transparent outline-none focus:border-transparent border-gray-200 border-2 placeholder:text-gray-500 mx-1 md:mx-3 px-2 py-3 my-3 rounded bg-[#e7e5e4] bg-opacity-[0.3]',
+    input:'focus:ring-transparent outline-none focus:border-transparent border-gray-200 border-2 placeholder:text-gray-500 mx-1 md:mx-3 px-2 py-3 my-1 lg:my-3 rounded bg-[#e7e5e4] bg-opacity-[0.3]',
     btn:'px-3 py-3  bg-stone-900 text-gray-50 mx-1 md:mx-3 my-5 hover:bg-stone-800 transition duration-[300ms] cursor-pointer '
 
 }

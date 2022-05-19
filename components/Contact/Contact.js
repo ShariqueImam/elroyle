@@ -2,21 +2,21 @@ import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import SingleDay from './SingleDay'
 import ContactForm from './ContactForm'
-import useWindowSize from '../../hooks/windowSize'
+import useWindowSize from '../hooks/windowSize'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 let ani =1
 const style = {
   wrapper: 'flex items-center justify-center',
   contentContainer: 'bg-[#FDFDFC] h-[90%] md:h-[85%] lg:h-[75%] w-[90%] md:w-[80%] lg:w-[60%] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-8 px-8 md:px-12',
-  heading: ' md:my-6 lg:my-2 w-[95%] md:w-[85%] lg:w-[90%] text-xl sm:text-xl md:text-xl lg:text-2xl text-[#F2ECDE] text-center text-center mx-auto',
-  smallHeading: 'my-2 w-[95%] md:w-[60%] mx-auto my-4 text-3xl sm:text-3xl md:text-3xl lg:text-3xl text-[#EBB43D] text-center',
+  heading: ' md:my-2 lg:my-2 w-[95%] md:w-[85%] lg:w-[90%] text-xl sm:text-xl md:text-xl lg:text-2xl text-[#F2ECDE] text-center text-center mx-auto',
+  smallHeading: 'my-2 md:my-4 w-[95%] md:w-[60%] mx-auto  text-3xl sm:text-3xl md:text-3xl lg:text-3xl text-[#EBB43D] text-center',
   side1: 'w-[100%] md:w-[35%] ',
   card: 'bg-stone-900 px-3 md:px-8 py-4 md:py-6 lg:py-12',
   cardContent: 'border-4 border-double border-[#EBB43D] py-3 md:py-5 lg:py-12',
-  side2: 'w-[100%] md:w-[55%] border-4 border-double border-[#EBB43D] px-2 md:px-8 py-4 md:py-12',
+  side2: 'w-[100%] md:w-[45%] border-4  border-double border-[#EBB43D] px-2 md:px-8 py-4 md:py-4 lg:py-8',
   bookingHeading:'text-sm md:text-md text-center text-gray-500 my-4',
-  dayContainer:'md:my-12 lg:my-12',
+  dayContainer:'md:my-3 lg:my-12',
 
 }
 const Contact = () => {
@@ -48,7 +48,6 @@ useEffect(() => {
       <motion.div  className={style.contentContainer} ref={ref} animate={animation}>
         <div className={style.side1}>
           <div className={style.card}>
-
             <div className={style.cardContent}>
               <h2 className={style.smallHeading} style={{ fontFamily: 'Kristi, cursive' }} >Check Availability</h2>
               <h2 className={style.heading} style={{ fontFamily: 'Yeseva One, cursive' }}>Opening Times</h2>

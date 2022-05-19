@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import useWindowSize from '../../hooks/windowSize'
+import useWindowSize from '../hooks/windowSize'
 import DropDownMenu from './DropDownMenu'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {ImCross} from 'react-icons/im'

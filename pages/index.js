@@ -21,6 +21,8 @@ const App = () => {
 
 export default App;
 
+// this will render the page at the build time 
+// providing much better load times
 export async function getStaticProps(context) {
   return {
     // the data in the props will be passed to the above function at the build time
