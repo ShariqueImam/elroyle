@@ -15,7 +15,7 @@ const Contact = () => {
   const style = {
       wrapper: ` flex items-center justify-center ${screenWidth.width > 1024 ? 'h-[90vh]' : 'h-[130vh] '}` ,
     contentContainer:
-      'bg-[#FDFDFC] h-[90%] md:h-[85%] lg:h-[75%] w-[90%] md:w-[95%] lg:w-[60%] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-8 px-8 md:px-12',
+      'bg-[#FDFDFC] h-[90%] md:h-[85%] lg:h-[75%] w-[90%] md:w-[95%] lg:w-[60%] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-8 px-8 md:px-4',
     heading:
       ' md:my-2 lg:my-2 w-[95%] md:w-[85%] lg:w-[90%] text-xl sm:text-xl md:text-xl lg:text-2xl text-[#F2ECDE] text-center text-center mx-auto',
     smallHeading:
