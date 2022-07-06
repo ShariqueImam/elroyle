@@ -21,7 +21,7 @@ const Contact = () => {
     smallHeading:
       'my-2 md:my-4 w-[95%] md:w-[60%] mx-auto  text-3xl sm:text-3xl md:text-3xl lg:text-3xl text-[#EBB43D] text-center',
     side1: 'w-[100%] md:w-[35%] ',
-    card: 'bg-stone-900 px-3 md:px-8 py-4 md:py-6 lg:py-12',
+    card: 'bg-stone-900 px-3 md:px-8 py-4 md:py-3 lg:py-12',
     cardContent: 'border-4 border-double border-[#EBB43D] py-3 md:py-5 lg:py-12',
     side2:
       'w-[100%] md:w-[45%] border-4  border-double border-[#EBB43D] px-2 md:px-8 py-4 md:py-4 lg:py-8',
